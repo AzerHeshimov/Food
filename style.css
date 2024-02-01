@@ -24,9 +24,16 @@ header nav a {
   font-size: 20px;
   color: #8c8999;
   margin-right: 30px;
+  cursor: pointer;
+}
+header nav a:hover {
+  color: #47C7D8;
 }
 header nav .home-color {
   color: #74bebc;
+}
+header nav .home-color:hover {
+  color: #47C7D8;
 }
 header .btn {
   display: none;
