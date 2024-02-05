@@ -6,6 +6,7 @@
         margin-bottom: 60px
     .box
         .imgbox
+            margin: auto
             width: 350px
         .textbox
             padding: 25px 55px
@@ -17,4 +18,38 @@
                 font-size: 20px
                 color: #676f8b
                 line-height: 1.3
-       
+    @media ( max-width: 1200px)
+        .imgbox
+            max-width: 270px
+    @media ( max-width: 992px)
+        h1
+            font-size: 45px
+            margin-bottom: 40px
+        .box
+            .textbox
+                padding: 25px 10px
+                h2
+                    font-size: 20px
+                h4
+                    font-size: 17px
+            .imgbox
+                max-width: 200px
+    @media ( max-width: 768px)
+        .box
+            .textbox
+                h4
+                    padding: 0 70px
+    @media ( max-width: 576px)
+        h1
+            font-size: 40px
+            margin-bottom: 20px
+        .box
+            .textbox
+                padding: 20px 10px
+                h4
+                    padding: 0 100px
+    @media ( max-width: 420px)
+        .box
+            .textbox
+                h4
+                    padding: 0 60px

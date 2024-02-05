@@ -53,6 +53,7 @@ header .btn h3 {
 }
 @media (max-width: 768px) {
   header .btn {
+    margin-right: 0;
     display: flex;
     justify-content: end;
   }
@@ -95,6 +96,53 @@ header .btn h3 {
   width: 120px;
   margin: 20px 0 10px;
 }
+@media (max-width: 992px) {
+  #beautiful .box {
+    padding: 0;
+  }
+  #beautiful .box h1 {
+    margin-right: 10px;
+    font-size: 50px;
+  }
+  #beautiful .box h5 {
+    margin-right: 15px;
+  }
+  #beautiful .imgbox {
+    margin-top: 15px;
+    max-width: 420px;
+  }
+}
+@media (max-width: 768px) {
+  #beautiful .box {
+    text-align: center;
+    padding: 0;
+  }
+  #beautiful .box h1 {
+    margin-right: 0;
+    font-size: 45px;
+  }
+  #beautiful .box .imgbox {
+    margin: 15px auto;
+    padding: 0;
+  }
+  #beautiful .imgbox {
+    margin: 15px auto;
+  }
+}
+@media (max-width: 576px) {
+  #beautiful .box h1 {
+    font-size: 40px;
+    padding: 0 70px;
+  }
+}
+@media (max-width: 420px) {
+  #beautiful .box h1 {
+    padding: 0 22px;
+  }
+  #beautiful .box h5 {
+    margin: 15px auto 20px;
+  }
+}
 
 #thehome {
   background-color: #f1f8f9;
@@ -121,6 +169,62 @@ header .btn h3 {
 #thehome .imgbox {
   width: 520px;
 }
+@media (max-width: 1100px) {
+  #thehome .imgbox {
+    max-width: 450px;
+  }
+}
+@media (max-width: 992px) {
+  #thehome .imgbox {
+    padding: 0 25px 0 0;
+    max-width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  #thehome .textbox {
+    text-align: center;
+  }
+  #thehome .textbox h1 {
+    margin: 10px auto;
+  }
+  #thehome .textbox h5 {
+    margin: 25px auto 50px;
+  }
+  #thehome .imgbox {
+    margin: 25px auto;
+    padding: 0;
+    max-width: 450px;
+  }
+}
+@media (max-width: 576px) {
+  #thehome .textbox {
+    margin: auto;
+  }
+  #thehome .textbox h1 {
+    font-size: 40px;
+  }
+  #thehome .textbox h5 {
+    padding: 0 40px;
+  }
+  #thehome .imgbox {
+    max-width: 330px;
+  }
+}
+@media (max-width: 420px) {
+  #thehome .textbox {
+    margin: auto;
+  }
+  #thehome .textbox h1, #thehome .textbox h5 {
+    padding: 0;
+    max-width: 250px;
+  }
+  #thehome .textbox h5 {
+    margin: 15px auto;
+  }
+  #thehome .imgbox {
+    max-width: 330px;
+  }
+}
 
 #works h1 {
   font-weight: 700;
@@ -129,6 +233,7 @@ header .btn h3 {
   margin-bottom: 60px;
 }
 #works .box .imgbox {
+  margin: auto;
   width: 350px;
 }
 #works .box .textbox {
@@ -143,6 +248,51 @@ header .btn h3 {
   font-size: 20px;
   color: #676f8b;
   line-height: 1.3;
+}
+@media (max-width: 1200px) {
+  #works .imgbox {
+    max-width: 270px;
+  }
+}
+@media (max-width: 992px) {
+  #works h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+  #works .box .textbox {
+    padding: 25px 10px;
+  }
+  #works .box .textbox h2 {
+    font-size: 20px;
+  }
+  #works .box .textbox h4 {
+    font-size: 17px;
+  }
+  #works .box .imgbox {
+    max-width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  #works .box .textbox h4 {
+    padding: 0 70px;
+  }
+}
+@media (max-width: 576px) {
+  #works h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  #works .box .textbox {
+    padding: 20px 10px;
+  }
+  #works .box .textbox h4 {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 420px) {
+  #works .box .textbox h4 {
+    padding: 0 60px;
+  }
 }
 
 #browse .textbox {
@@ -218,8 +368,48 @@ header .btn h3 {
   padding: 17px 53px;
   margin-top: 50px;
 }
+@media (max-width: 992px) {
+  #browse .box {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  #browse .textbox h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 576px) {
+  #browse .btn {
+    padding: 10px 25px;
+  }
+  #browse .box {
+    padding: 20px;
+  }
+  #browse h1 {
+    font-size: 36px;
+  }
+  #browse h4 {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 420px) {
+  #browse .btn {
+    padding: 6px 16px;
+  }
+  #browse .box {
+    padding: 20px;
+  }
+  #browse h1 {
+    font-size: 36px;
+  }
+  #browse h4 {
+    margin: 10px 0;
+    padding: 0 40px;
+  }
+}
 
 #order .imgbox {
+  margin: 0 20px;
   width: 600px;
 }
 #order .textbox h1 {
@@ -239,6 +429,43 @@ header .btn h3 {
   color: white;
   background-color: #38b6c1;
   font-size: 20px;
+}
+@media (max-width: 992px) {
+  #order .imgbox {
+    max-width: 400px;
+  }
+  #order .textbox h1 {
+    font-size: 45px;
+  }
+  #order .textbox h5 {
+    margin: 17px 75px 25px 0;
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  #order .imgbox {
+    max-width: 460px;
+  }
+  #order .textbox {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  #order .imgbox {
+    max-width: 400px;
+  }
+}
+@media (max-width: 420px) {
+  #order .imgbox {
+    max-width: 330px;
+  }
+  #order .textbox h1 {
+    font-size: 36px;
+  }
+  #order .textbox h5 {
+    margin: 20px auto;
+    padding: 0 30px;
+  }
 }
 
 #call {
@@ -264,6 +491,56 @@ header .btn h3 {
 #call .imgbox {
   width: 520px;
 }
+@media (max-width: 1100px) {
+  #call .imgbox {
+    max-width: 450px;
+  }
+}
+@media (max-width: 992px) {
+  #call .textbox h1 {
+    font-size: 50px;
+  }
+  #call .textbox h5 {
+    margin: 25px 25px 25px 0;
+  }
+  #call .imgbox {
+    padding: 0 25px;
+    max-width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  #call .textbox {
+    text-align: center;
+  }
+  #call .textbox h1 {
+    font-size: 40px;
+  }
+  #call .imgbox {
+    margin-top: 20px;
+    max-width: 460px;
+  }
+}
+@media (max-width: 576px) {
+  #call .imgbox {
+    max-width: 400px;
+  }
+}
+@media (max-width: 420px) {
+  #call .imgbox {
+    max-width: 330px;
+  }
+  #call .textbox h1 {
+    font-size: 36px;
+  }
+  #call .textbox h5 {
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  #call .textbox .btn {
+    font-size: 17px;
+    padding: 11px 17px;
+  }
+}
 
 #support .textbox h1 {
   margin: 0 70px 0 40px;
@@ -284,4 +561,25 @@ header .btn h3 {
 }
 #support .bgc {
   background-color: #35b6c1;
+}
+@media (max-width: 992px) {
+  #support .textbox h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  #support .imgbox {
+    margin-bottom: 15px;
+  }
+  #support .textbox {
+    padding: 50px 20px;
+  }
+  #support .textbox h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 420px) {
+  #support .textbox h1 {
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
