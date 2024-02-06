@@ -37,12 +37,19 @@ header nav .home-color:hover {
 }
 header .btn {
   display: none;
-  width: 90px;
-  height: 40px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 20px;
+  padding: 15px 20px;
+  background-color: #dadadb;
+  border: 1px solid #dadadb;
+  border-radius: 7px;
 }
-header .btn h3 {
+header .cart {
+  display: none;
+  padding: 20px 20px;
+  color: white;
+  background-color: #7ab9d0;
+  border-radius: 7px;
+}
+header .cart h3 {
   margin-right: 5px;
 }
 @media (max-width: 992px) {
@@ -52,10 +59,14 @@ header .btn h3 {
   }
 }
 @media (max-width: 768px) {
+  header .cart {
+    display: flex;
+    justify-content: end;
+    margin-left: 170px;
+  }
   header .btn {
     margin-right: 0;
     display: flex;
-    justify-content: end;
   }
   header nav {
     display: none;
@@ -122,11 +133,11 @@ header .btn h3 {
     font-size: 45px;
   }
   #beautiful .box .imgbox {
-    margin: 15px auto;
+    margin: 20px auto;
     padding: 0;
   }
   #beautiful .imgbox {
-    margin: 15px auto;
+    margin: 90px auto;
   }
 }
 @media (max-width: 576px) {
@@ -136,11 +147,18 @@ header .btn h3 {
   }
 }
 @media (max-width: 420px) {
+  #beautiful {
+    padding: 0;
+  }
   #beautiful .box h1 {
-    padding: 0 22px;
+    font-size: 50px;
+    padding: 0 16px;
   }
   #beautiful .box h5 {
-    margin: 15px auto 20px;
+    margin: 15px auto 45px;
+  }
+  #beautiful .imgbox {
+    margin: 100px auto;
   }
 }
 
@@ -211,17 +229,27 @@ header .btn h3 {
   }
 }
 @media (max-width: 420px) {
+  #thehome {
+    padding: 60px 0;
+  }
   #thehome .textbox {
     margin: auto;
+  }
+  #thehome .textbox h1 {
+    font-size: 50px;
   }
   #thehome .textbox h1, #thehome .textbox h5 {
     padding: 0;
     max-width: 305px;
   }
   #thehome .textbox h5 {
-    margin: 15px auto;
+    margin: 25px auto 45px;
+  }
+  #thehome .textbox .btn {
+    padding: 13px 45px;
   }
   #thehome .imgbox {
+    margin-top: 80px;
     max-width: 330px;
   }
 }
@@ -290,8 +318,21 @@ header .btn h3 {
   }
 }
 @media (max-width: 420px) {
+  #works {
+    padding: 0;
+  }
+  #works .box .textbox {
+    padding: 25px 10px 100px;
+  }
   #works .box .textbox h4 {
-    padding: 0 60px;
+    padding: 0 47px;
+  }
+  #works h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  #works .imgbox {
+    min-width: 270px;
   }
 }
 
