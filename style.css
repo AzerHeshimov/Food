@@ -53,13 +53,22 @@ header .cart h3 {
   margin-right: 5px;
 }
 @media (max-width: 992px) {
+  header {
+    padding: 40px 0;
+  }
   header nav {
     display: none;
     justify-content: end;
   }
   header .btn {
+    position: absolute;
+    right: 20px;
     margin-right: 0;
     display: flex;
+  }
+  header .imgbox {
+    position: absolute;
+    left: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -109,25 +118,26 @@ header .cart h3 {
 }
 #beautiful .box .imgbox {
   width: 120px;
-  margin: 20px 0 10px;
+  margin: 20px auto 10px;
 }
 @media (max-width: 992px) {
   #beautiful .box {
+    text-align: center;
     padding: 0;
   }
   #beautiful .box h1 {
+    padding: 0 100px;
     margin-right: 10px;
     font-size: 50px;
   }
   #beautiful .box h5 {
+    padding: 0 30px;
     margin-right: 15px;
   }
   #beautiful .imgbox {
-    margin-top: 15px;
-    max-width: 420px;
-  }
-  #beautiful .row {
-    flex-flow: column;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 500px;
   }
 }
 @media (max-width: 768px) {
@@ -164,7 +174,7 @@ header .cart h3 {
   #beautiful .box h5 {
     margin: 15px auto 45px;
   }
-  #beautiful .imgbox {
+  #beautiful .box .imgbox {
     margin: 100px auto;
   }
 }
@@ -200,9 +210,6 @@ header .cart h3 {
   }
 }
 @media (max-width: 992px) {
-  #thehome .row {
-    flex-flow: column;
-  }
   #thehome .imgbox {
     padding: 0 25px 0 0;
     max-width: 400px;
@@ -210,6 +217,7 @@ header .cart h3 {
 }
 @media (max-width: 768px) {
   #thehome .textbox {
+    margin: 0 auto;
     text-align: center;
   }
   #thehome .textbox h1 {
