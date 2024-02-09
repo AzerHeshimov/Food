@@ -564,14 +564,14 @@ header .cart h3 {
   #order .textbox {
     text-align: center;
     margin: 0 auto;
-    padding: 0 100px;
   }
   #order .textbox h1 {
-    padding: 0 90px;
+    margin: 0 auto;
+    width: 350px;
     font-size: 45px;
   }
   #order .textbox h5 {
-    margin: 20px 50px 50px;
+    margin: 20px 130px 50px;
     font-size: 18px;
   }
 }
