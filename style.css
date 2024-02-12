@@ -75,7 +75,8 @@ header .cart h3 {
   header .cart {
     display: flex;
     justify-content: end;
-    margin-left: 170px;
+    position: absolute;
+    right: 100px;
   }
   header .btn {
     margin-right: 0;
@@ -83,6 +84,16 @@ header .cart h3 {
   }
   header nav {
     display: none;
+  }
+}
+@media (max-width: 432px) {
+  header .cart {
+    position: absolute;
+    right: 70px;
+  }
+  header .btn {
+    position: absolute;
+    right: 5px;
   }
 }
 
@@ -173,9 +184,6 @@ header .cart h3 {
   }
   #beautiful .box h5 {
     margin: 15px auto 45px;
-  }
-  #beautiful .box .imgbox {
-    margin: 100px auto;
   }
 }
 
@@ -375,7 +383,6 @@ header .cart h3 {
   background-color: #f0fafc;
 }
 #browse .textbox {
-  width: 500px;
   text-align: center;
 }
 #browse .textbox h1 {
@@ -405,10 +412,11 @@ header .cart h3 {
   color: white;
 }
 #browse .box {
+  background-color: white;
   padding: 30px;
 }
 #browse .box .imgbox {
-  width: 150px;
+  max-width: 150px;
   border-radius: 10px;
 }
 #browse .box .textbox {
@@ -448,21 +456,44 @@ header .cart h3 {
   margin-top: 50px;
 }
 @media (max-width: 992px) {
-  #browse .row {
-    flex-flow: column;
-  }
   #browse .box {
     padding: 20px 40px;
-    background-color: white;
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 991px) and (min-width: 432px) {
+  #browse .imgbox {
+    width: 200px;
+  }
+  #browse .textbox {
+    width: 500px;
   }
 }
 @media (max-width: 768px) {
   #browse .box {
-    flex-direction: row;
+    padding: 0;
+    margin: 15px 0 0 0;
+    flex-direction: column;
+  }
+  #browse .imgbox {
+    min-width: 200px;
+    margin-top: 10px;
+  }
+  #browse .add {
+    margin-bottom: 10px;
+  }
+  #browse .textbox h2 {
+    margin-top: 10px;
   }
   #browse .textbox h1 {
     font-size: 40px;
+  }
+  #browse .textbox .minibox {
+    display: flex;
+    flex-direction: column;
+  }
+  #browse .textbox .minibox h5 {
+    margin: 10px 0;
   }
 }
 @media (max-width: 576px) {
@@ -485,9 +516,6 @@ header .cart h3 {
   }
   #browse .btn {
     margin-bottom: 7px;
-  }
-  #browse .textbox {
-    max-width: 335px;
   }
   #browse .box {
     padding: 20px;
@@ -637,7 +665,6 @@ header .cart h3 {
   #call .textbox {
     text-align: center;
     margin: 0 auto;
-    padding: 0 100px;
   }
   #call .textbox h1 {
     padding: 0 40px;
@@ -716,7 +743,6 @@ header .cart h3 {
   }
   #support .imgbox {
     margin-bottom: 20px;
-    height: 350px;
   }
 }
 @media (max-width: 768px) {

@@ -48,11 +48,19 @@ header
         .cart
             display: flex
             justify-content: end
-            margin-left: 170px
+            position: absolute
+            right: 100px
         .btn
             margin-right: 0
             display: flex
             
         nav
             display: none
+    @media ( max-width: 432px )
+        .cart
+            position: absolute
+            right: 70px
+        .btn
+            position: absolute
+            right: 5px
     

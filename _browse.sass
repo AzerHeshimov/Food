@@ -1,7 +1,7 @@
 #browse
     background-color: #f0fafc
     .textbox
-        width: 500px
+        // width: 500px
         text-align: center
         h1
             font-weight: 700
@@ -25,9 +25,10 @@
         background-color: #3cc1d8
         color: #ffff
     .box
+        background-color: #ffff
         padding: 30px
         .imgbox
-            width: 150px
+            max-width: 150px
             border-radius: 10px
         .textbox
             text-align: left
@@ -58,21 +59,40 @@
     .big
         padding: 17px 53px
         margin-top: 50px
+
     @media ( max-width: 992px )
-        .row
-            flex-flow: column
+        
         .box
             padding: 20px 40px
-            background-color: #ffff
+            
             margin-bottom: 15px
-            .imgbox
+            
                 
+    @media (max-width: 991px) and (min-width: 432px)
+        .imgbox
+            width: 200px
+        .textbox 
+            width:500px
     @media ( max-width: 768px )
         .box
-            flex-direction: row
+            padding: 0
+            margin: 15px 0 0 0
+            flex-direction: column
+        .imgbox
+            min-width: 200px
+            margin-top: 10px
+        .add
+            margin-bottom: 10px
         .textbox
+            h2
+                margin-top: 10px
             h1
                 font-size: 40px
+            .minibox
+                display: flex
+                flex-direction: column
+                h5
+                    margin: 10px 0
     @media ( max-width: 576px )
         .btn
             padding: 10px 25px
@@ -87,8 +107,8 @@
         .btn
             margin-bottom: 7px
            
-        .textbox
-            max-width: 335px
+        // .textbox
+        //     max-width: 335px
             
         .box
             padding: 20px
