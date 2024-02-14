@@ -336,7 +336,7 @@ header .cart h3 {
     font-size: 17px;
   }
   #works .box .imgbox {
-    max-width: 300px;
+    width: 300px;
   }
 }
 @media (max-width: 768px) {
