@@ -191,7 +191,6 @@ header .cart h3 {
   background-color: #f1f8f9;
 }
 #thehome .textbox h1 {
-  width: 400px;
   font-weight: 700;
   font-size: 60px;
   color: #36b3bd;
@@ -208,9 +207,6 @@ header .cart h3 {
   color: white;
   font-size: 20px;
   border-radius: 5px;
-}
-#thehome .imgbox {
-  width: 520px;
 }
 @media (max-width: 1100px) {
   #thehome .imgbox {
@@ -375,7 +371,7 @@ header .cart h3 {
     margin-bottom: 40px;
   }
   #works .imgbox {
-    min-width: 270px;
+    width: auto;
   }
 }
 
@@ -416,7 +412,6 @@ header .cart h3 {
   padding: 30px;
 }
 #browse .box .imgbox {
-  max-width: 150px;
   border-radius: 10px;
 }
 #browse .box .textbox {
@@ -455,6 +450,11 @@ header .cart h3 {
   padding: 17px 53px;
   margin-top: 50px;
 }
+@media (min-width: 992px) {
+  #browse .imgbox {
+    max-width: 150px;
+  }
+}
 @media (max-width: 992px) {
   #browse .box {
     padding: 20px 40px;
@@ -464,9 +464,6 @@ header .cart h3 {
 @media (max-width: 991px) and (min-width: 432px) {
   #browse .imgbox {
     width: 200px;
-  }
-  #browse .textbox {
-    width: 500px;
   }
 }
 @media (max-width: 768px) {
@@ -499,37 +496,35 @@ header .cart h3 {
 @media (max-width: 576px) {
   #browse .btn {
     padding: 10px 25px;
-  }
-  #browse .box {
-    padding: 20px;
-  }
-  #browse h1 {
-    font-size: 36px;
-  }
-  #browse h4 {
-    margin: 10px 0;
-  }
-}
-@media (max-width: 431px) {
-  #browse {
-    padding: 40px 0;
-  }
-  #browse .btn {
     margin-bottom: 7px;
   }
   #browse .box {
     padding: 20px;
   }
   #browse h1 {
+    font-size: 36px;
+  }
+  #browse h4 {
+    margin: 10px 0;
+  }
+  #browse .col-md-12 {
+    flex-flow: column;
+  }
+}
+@media (max-width: 431px) and (min-width: 300px) {
+  #browse {
+    padding: 40px 0;
+  }
+  #browse .box {
+    padding: 20px;
+  }
+  #browse h1 {
     padding: 0 40px;
     font-size: 36px;
   }
   #browse h4 {
     margin: 10px 0;
     padding: 0 40px;
-  }
-  #browse .col-md-12 {
-    flex-flow: column;
   }
   #browse .box {
     border-radius: 10px;
@@ -544,7 +539,6 @@ header .cart h3 {
     padding: 0 15px;
   }
   #browse .box .imgbox {
-    width: 320px;
     margin-bottom: 20px;
   }
   #browse .box .btn {
@@ -561,6 +555,11 @@ header .cart h3 {
   }
   #browse .minibox h5 {
     margin: 15px 0 0;
+  }
+}
+@media (max-width: 576px) and (min-width: 330px) {
+  #browse .imgbox {
+    min-width: 310px;
   }
 }
 
@@ -624,6 +623,7 @@ header .cart h3 {
     padding: 10px 55px;
   }
   #order .textbox h1 {
+    width: auto;
     padding: 0 20px;
     font-size: 50px;
   }
@@ -652,9 +652,6 @@ header .cart h3 {
   color: white;
   background-color: #38b6c1;
   font-size: 20px;
-}
-#call .imgbox {
-  width: 520px;
 }
 @media (max-width: 1100px) {
   #call .imgbox {
@@ -759,6 +756,9 @@ header .cart h3 {
 @media (max-width: 430px) {
   #support {
     padding: 0;
+  }
+  #support .textbox {
+    padding: 15px 20px;
   }
   #support .textbox h1 {
     margin: 0;

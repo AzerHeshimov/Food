@@ -28,7 +28,7 @@
         background-color: #ffff
         padding: 30px
         .imgbox
-            max-width: 150px
+           
             border-radius: 10px
         .textbox
             text-align: left
@@ -59,7 +59,9 @@
     .big
         padding: 17px 53px
         margin-top: 50px
-
+    @media (min-width: 992px)
+        .imgbox
+            max-width: 150px
     @media ( max-width: 992px )
         
         .box
@@ -71,8 +73,8 @@
     @media (max-width: 991px) and (min-width: 432px)
         .imgbox
             width: 200px
-        .textbox 
-            width:500px
+        // .textbox 
+        //     width:500px
     @media ( max-width: 768px )
         .box
             padding: 0
@@ -96,19 +98,18 @@
     @media ( max-width: 576px )
         .btn
             padding: 10px 25px
+            margin-bottom: 7px
         .box
             padding: 20px
         h1
             font-size: 36px
         h4
             margin: 10px 0
-    @media ( max-width: 431px )
+        .col-md-12
+            flex-flow: column
+    @media ( max-width: 431px ) and (min-width: 300px)
         padding: 40px 0
-        .btn
-            margin-bottom: 7px
-           
-        // .textbox
-        //     max-width: 335px
+        
             
         .box
             padding: 20px
@@ -118,8 +119,7 @@
         h4
             margin: 10px 0
             padding: 0 40px
-        .col-md-12
-            flex-flow: column
+        
         .box
             border-radius: 10px
             padding: 15px
@@ -131,7 +131,7 @@
                 max-width: 380px
                 padding: 0 15px
             .imgbox
-                width: 320px
+                
                 margin-bottom: 20px
             .btn
                 margin: 7px
@@ -147,5 +147,7 @@
         .btn
             // margin: 40px auto 0
             // width: 250px
-        
+    @media (max-width: 576px) and (min-width: 330px)
+        .imgbox
+            min-width: 310px
             
