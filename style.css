@@ -443,6 +443,7 @@ header .cart h3 {
   border: 1px solid #e1e1e1;
   background-color: #e9e9e9;
   width: 50px;
+  height: 42px;
 }
 #browse .box .textbox .add .btn {
   background-color: #3cc1d8;
@@ -477,6 +478,7 @@ header .cart h3 {
   }
   #browse .imgbox {
     min-width: 200px;
+    margin-top: 10px;
   }
   #browse .add {
     margin-bottom: 10px;
@@ -498,7 +500,10 @@ header .cart h3 {
 @media (max-width: 576px) {
   #browse .btn {
     padding: 10px 25px;
-    margin-bottom: 7px;
+  }
+  #browse .big {
+    width: 200px;
+    margin: 20px auto 7px;
   }
   #browse .box {
     padding: 20px;
@@ -511,6 +516,18 @@ header .cart h3 {
   }
   #browse .col-md-12 {
     flex-flow: column;
+  }
+}
+@media (max-width: 576px) and (min-width: 432px) {
+  #browse .box {
+    width: 400px;
+    margin: 0 auto;
+  }
+  #browse .box .imgbox {
+    width: 360px;
+  }
+  #browse .box .textbox {
+    padding: 0 40px;
   }
 }
 @media (max-width: 431px) and (min-width: 300px) {
